@@ -1,6 +1,6 @@
 
 name: GitHub Actions Demo
-run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+run-name: ${{ github.actor }} is running python 🚀
 on: [push]
 jobs:
   Explore-GitHub-Actions:
@@ -8,6 +8,7 @@ jobs:
     steps:
       - name: Check out repository code
         uses: actions/checkout@v3
+      - name: "setup python"
         uses: actions/setup-python@v4
         with:
           python-version: '3.10' 
