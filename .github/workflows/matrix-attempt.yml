@@ -19,7 +19,5 @@ jobs:
         with:
           java-version: ${{ matrix.java }}
           java-package: jdk # optional (jdk, jre, jdk+fx or jre+fx) - defaults to jdk
-
-      - name: Verify with Maven
       - run: javac HelloWorldApp.java
       - run: java HelloWorldApp
